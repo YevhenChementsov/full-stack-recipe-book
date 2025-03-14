@@ -1,5 +1,5 @@
-import axios from "axios";
-import dotenv from "dotenv";
+import axios from 'axios';
+import dotenv from 'dotenv';
 dotenv.config();
 
 const BASE_URL = process.env.BASE_URL;
@@ -17,7 +17,7 @@ interface Recipe {
 export const fetchRecipes = async (
   ingredient?: string,
   country?: string,
-  category?: string
+  category?: string,
 ): Promise<Recipe[]> => {
   let url = `${BASE_URL}/search.php?s=`;
 
