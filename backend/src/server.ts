@@ -10,7 +10,7 @@ type Response = express.Response;
 
 dotenv.config();
 
-const { PORT } = process.env as { PORT?: string };
+const PORT = process.env.PORT;
 
 const app: express.Application = express();
 
