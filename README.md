@@ -23,9 +23,9 @@ _The project is divided into two main folders:_
 **1. Get Available Recipes**
   - Endpoint to fetch all available recipes.
   - Supports filtering by:
-      - ***Ingredient***: `/api/recipes?ingredient=chicken_breast\`
-      - ***Country***: `/api/recipes?country=Canadian`
-      - ***Category***: `/api/recipes?category=Seafood`
+      - ***Ingredient***: `/recipes?ingredient=chicken_breast`
+      - ***Country***: `/recipes?country=Canadian`
+      - ***Category***: `/recipes?category=Seafood`
 
 **2.Get Recipe Info**
   - Endpoint to fetch detailed information about a specific recipe by its ID: `/api/recipe/:id`
@@ -67,9 +67,12 @@ npm install
 3.Start the backend server:
 
 ```bash
+npm build
+```
+```bash
 npm start
 ```
-The backend will run on `http://localhost:3001`.
+The backend will run on `http://localhost:3001/recipes`.
 
 #### Frontend Setup
 1.Navigate to the frontend folder:

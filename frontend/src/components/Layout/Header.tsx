@@ -10,7 +10,7 @@ const setActiveColor = ({ isActive }: setActiveColorProps): string => {
 
 const Header = () => (
   <header className="flex min-h-20 items-center border-b border-solid border-black justify-between">
-    <img src="/logo.jpg" alt="Logo" className="h-16 w-24" />
+    <img src="/recipes/logo.jpg" alt="Logo" className="h-16 w-24" />
     <h2 className="font-bold text-xl text-cyan-300 mobile:text-xs">
       COOK | COLLECT | CREATE
     </h2>

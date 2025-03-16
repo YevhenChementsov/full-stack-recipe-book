@@ -4,14 +4,17 @@ import { defineConfig } from 'vite';
 
 // https://vite.dev/config/
 export default defineConfig({
-  base:
-    process.env.NODE_ENV === 'production' ? '/full-stack-recipe-book/' : '/',
+  base: '/recipes',
   plugins: [react()],
+  preview: {
+    port: 3000,
+    strictPort: true,
+  },
   server: {
     port: 3000,
     open: true,
     proxy: {
-      '/recipes': {
+      '/api': {
         target: 'http://localhost:3001',
         changeOrigin: true,
       },

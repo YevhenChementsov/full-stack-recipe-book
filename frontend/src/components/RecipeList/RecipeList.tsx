@@ -14,7 +14,13 @@ const RecipeList = ({ recipes }: RecipeListProps) => {
           key={idMeal}
           className="border rounded-lg overflow-hidden shadow cursor-pointer hover:shadow-lg sm:hover:scale-105"
         >
-          <img src={`${strMealThumb}`} alt={strMeal} />
+          <img
+            src={`${strMealThumb}`}
+            alt={strMeal}
+            width={240}
+            height={240}
+            className="w-full"
+          />
           <h2 className="flex justify-center items-center text-xl hover:text-cyan-300 min-h-12">
             {strMeal.length > 20 ? strMeal.slice(0, 22) + '...' : strMeal}
           </h2>
