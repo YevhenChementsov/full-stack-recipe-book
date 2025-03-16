@@ -62,15 +62,15 @@ cd backend
 2.Install dependencies:
 
 ```bash
-npm install
+yarn
 ```
 3.Start the backend server:
 
 ```bash
-npm build
+yarn build
 ```
 ```bash
-npm start
+yarn start
 ```
 The backend will run on `http://localhost:3001/recipes`.
 
@@ -83,21 +83,24 @@ cd frontend
 2.Install dependencies:
 
 ```bash
-npm install
+yarn
 ```
 
 3.Start the frontend server:
 
 ```bash
-npm run dev
+yarn build
 ```
-The frontend will run on `http://localhost:3000`.
+```bash
+yarn preview
+```
+The frontend will run on `http://localhost:3000/recipes`.
 
 ---
 ## Running the Application
 1. Start both the backend and frontend servers as described above.
 
-2. Open your browser and navigate to `http://localhost:3000` to access the frontend.
+2. Open your browser and navigate to `http://localhost:3000/recipes` to access the frontend.
 
 3. The frontend will communicate with the backend to fetch and display recipe data.
 
@@ -108,8 +111,8 @@ The frontend will run on `http://localhost:3000`.
  - Run the following commands to lint and format the code:
 
 ```bash
-npm run lint
-npm run format
+yarn lint
+yarn format
 ```
 
 ---
