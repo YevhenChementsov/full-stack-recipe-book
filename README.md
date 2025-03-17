@@ -2,6 +2,7 @@
 _The project is divided into two main folders:_
 
 **Backend**: Contains the Node.js application responsible for fetching and serving recipe data.
+
 **Frontend**: Contains the React application responsible for displaying recipes and interacting with the backend.
 
 ---
@@ -28,7 +29,7 @@ _The project is divided into two main folders:_
       - ***Category***: `/recipes?category=Seafood`
 
 **2.Get Recipe Info**
-  - Endpoint to fetch detailed information about a specific recipe by its ID: `/api/recipe/:id`
+  - Endpoint to fetch detailed information about a specific recipe by its ID: `/recipe/:id`
 
 #### Frontend
 **1. Recipe List Page**
